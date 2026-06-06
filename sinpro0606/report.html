@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>분석 결과 리포트</title>
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --surface-color: #1f2833;
+            --text-main: #ffffff;
+            --text-sub: #a9b7c6;
+            --point-color: #007aff;
+            --accent-border: #2f3e46;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .fixed-header {
+            background-color: rgba(31, 40, 51, 0.95);
+            border-left: 4px solid var(--point-color);
+            padding: 16px;
+            border-radius: 4px 12px 12px 4px;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #e0e0e0;
+            margin-bottom: 28px;
+            word-break: keep-all;
+        }
+        .main-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--accent-border);
+            padding-bottom: 10px;
+        }
+        .manual-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex-grow: 1;
+        }
+        .card {
+            background-color: var(--surface-color);
+            border-radius: 14px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .card-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--point-color);
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .card-title span {
+            font-size: 13px;
+            font-weight: 400;
+            color: var(--text-sub);
+            margin-left: 6px;
+        }
+        .card-body {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #d1d5db;
+            word-break: keep-all;
+        }
+        .footer-disclaimer {
+            margin-top: 40px;
+            padding-top: 16px;
+            border-top: 1px solid var(--accent-border);
+            font-size: 11px;
+            line-height: 1.4;
+            color: #555c65;
+            text-align: center;
+            word-break: keep-all;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fixed-header">
+        본 리포트는 15만 건의 안면 미세 비율 빅데이터를 기반으로 한 [기질적 리스크 확률]입니다. 현장 중개사의 직관을 결합하여 집도하십시오.
+    </div>
+
+    <h2 class="main-title">종합 분석 3단계 타격 매뉴얼</h2>
+
+    <div class="manual-section">
+        <div class="card">
+            <div class="card-tag">단계 01</div>
+            <div class="card-title">성향 판정: <span>[속전속결형]</span></div>
+            <div class="card-body">
+                코끝과 콧방울 가로 폭이 미간에 비해 좁고 단단하게 모여 있는 상 - 참을성이 부족하여 결론을 즉시 확인하고 싶어 하는 기질입니다. 매물 조건에 대한 질문이 들어올 경우 머뭇거림 없이 즉각적인 답변(대출 가능 선, 입주 가능일 등 핵심 수치)을 제시하여 주도권을 쥐십시오.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-tag">단계 02</div>
+            <div class="card-title">리스크 필터: <span>[찰나의 변심 주의]</span></div>
+            <div class="card-body">
+                눈과 눈썹 사이가 좁고 안광이 한곳에 고정되지 않고 얇게 퍼지는 상 - 본능적인 손익 계산과 불안감으로 인해 마음이 시시각각 흔들리기 쉬운 성향입니다. 성급함으로 인한 계약 파기를 조심하시고, 조건과 특약을 더욱 꼼꼼하게 대처하십시오.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-tag">단계 03</div>
+            <div class="card-title">클로징 지침: <span>[선택지 압축 타격]</span></div>
+            <div class="card-body">
+                입술 겉모음이 짧고 하악 근육이 긴장되어 있는 상 - 스스로 결정을 내리는 데 심리적 지체(망설임)를 겪고 있습니다. 여러 매물로 혼란을 주지 마시고, 최종 적합 매물 2가지만 앞에 놓고 주도권을 리드하십시오.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-disclaimer">
+        본 리포트는 통계적 가이드일 뿐이며, 최종 판단의 책임은 사용자(중개사) 본인에게 있습니다.
+    </div>
+
+</body>
+</html>
